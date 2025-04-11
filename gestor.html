@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Registros de Ponto</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <title>Painel do Gestor</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Registros de Ponto</h1>
+  <h2>Painel do Gestor</h2>
+  
+  <div class="filtros">
     <div>
-      <label for="filtroMatricula">Filtrar por matrícula:</label>
-      <input type="text" id="filtroMatricula" placeholder="Digite a matrícula">
-      <button id="btnFiltrar">Filtrar</button>
-      <button id="btnLimpar">Limpar</button>
+      <label for="filtroMatricula">Matrícula:</label>
+      <input type="text" id="filtroMatricula" placeholder="Filtrar por matrícula" />
     </div>
-
-    <table id="tabelaRegistros">
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Matrícula</th>
-          <th>Data</th>
-          <th>Hora</th>
-          <th>IP</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <div>
+      <label for="filtroData">Data:</label>
+      <input type="date" id="filtroData" />
+    </div>
+    <button id="btnFiltrar">Filtrar</button>
+    <button id="btnLimpar">Limpar Filtro</button>
+    <button id="btnExportar">Exportar CSV</button>
   </div>
-
+  
+  <table id="tabelaRegistros">
+    <thead>
+      <tr>
+        <th data-sort="nome">Nome</th>
+        <th data-sort="matricula">Matrícula</th>
+        <th data-sort="data">Data</th>
+        <th data-sort="hora">Hora</th>
+        <th>IP</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  
+  <a href="index.html"><button>Sair</button></a>
   <script src="scripts/main.js"></script>
 </body>
 </html>

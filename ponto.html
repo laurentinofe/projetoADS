@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Registro de Ponto</title>
-  <link rel="stylesheet" href="styles/style.css" />
+  <meta charset="UTF-8">
+  <title>Registrar Ponto</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Registrar Ponto</h1>
-    <p id="boasVindas"></p>
-    <button id="btnRegistrar">Registrar agora</button>
+    <h2 id="boasVindas">Olá!</h2>
+    <button id="btnRegistrar">Registrar Ponto</button>
     <p id="resultado"></p>
+    
+    <div class="registros-hoje">
+      <h3>Seus registros hoje:</h3>
+      <ul id="listaRegistros"></ul>
+    </div>
+    
+    <a href="index.html"><button>Sair</button></a>
   </div>
-
   <script src="scripts/main.js"></script>
 </body>
 </html>

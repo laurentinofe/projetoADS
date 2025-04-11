@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login</title>
+  <title>Login Funcionário</title>
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Login</h1>
+    <h2>Login Funcionário</h2>
     <form id="formLogin">
-      <input type="text" id="matriculaLogin" placeholder="Matrícula" required />
-      <input type="password" id="senhaLogin" placeholder="Senha" required />
+      <div class="form-group">
+        <label for="matriculaLogin">Matrícula:</label>
+        <input type="text" id="matriculaLogin" placeholder="Digite sua matrícula" required />
+      </div>
+      <div class="form-group">
+        <label for="senhaLogin">Senha:</label>
+        <input type="password" id="senhaLogin" placeholder="Digite sua senha" required />
+      </div>
       <button type="submit">Entrar</button>
     </form>
+    <a href="index.html"><button>Voltar</button></a>
   </div>
   <script src="scripts/main.js"></script>
 </body>
